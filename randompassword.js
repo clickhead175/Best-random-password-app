@@ -38,3 +38,53 @@ thememode.addEventListener('click',()=> {
         h1.style.color = "white"
     }
 })
+
+
+
+
+
+// async function copytoclip(passwords){
+//     try{
+//         await navigator.clipboard.writeText(password);
+//             console.log("password is copied!")
+//     }
+//     catch(err){
+//         console.log('failed to copy password',err);
+//         alert('could not copy text automatically')
+//     }
+// }
+
+
+
+function passwordgenerator(){
+    let password = ""
+    let password2 = ""
+    const passwordlenght = 10
+
+    for (let index = 0; index <= passwordlenght; index++) {
+
+        let randomnumbers = Math.floor(Math.random() * characters.length)
+        let randomnumbers2 = Math.floor(Math.random() * characters.length)
+
+        password += characters[randomnumbers]
+        password2 += characters[randomnumbers2]
+    }
+    
+    div.textContent = password
+    div2.textContent = password2
+}
+
+
+genbtn.addEventListener('click', () => {
+    passwordgenerator() 
+    copytoclip()
+})
+ 
+
+closetab.addEventListener('click',()=> {
+    sidemenu.classList.remove('active')
+    closetab.style.display = "none"
+    linksdisplay.style.display = "none"
+    menu.style.display = "inline"
+})
+

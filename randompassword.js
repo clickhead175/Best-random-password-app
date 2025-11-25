@@ -18,9 +18,6 @@ menu.addEventListener('click', () => {
         linksdisplay.style.display = "flex"
         closetab.style.display = "inline"
         menu.style.display = "none"
-//         if(event.target.sidemenu.contains('active')){
-//         menu.style.display = "none"
-// }
 })
 thememode.addEventListener('click',()=> {
     lightmode.classList.toggle('active2')
@@ -38,11 +35,6 @@ thememode.addEventListener('click',()=> {
         h1.style.color = "white"
     }
 })
-
-
-
-
-
 // async function copytoclip(passwords){
 //     try{
 //         await navigator.clipboard.writeText(password);
@@ -53,8 +45,6 @@ thememode.addEventListener('click',()=> {
 //         alert('could not copy text automatically')
 //     }
 // }
-
-
 
 function passwordgenerator(){
     let password = ""
@@ -87,4 +77,5 @@ closetab.addEventListener('click',()=> {
     linksdisplay.style.display = "none"
     menu.style.display = "inline"
 })
+
 

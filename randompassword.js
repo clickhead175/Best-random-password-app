@@ -12,7 +12,6 @@ const darkmode = document.querySelector('.darkmode');
 const h1 = document.querySelector('.firsth1')
 const paragraph = document.querySelector('.paragraph')
 
-
 menu.addEventListener('click', () => {
         sidemenu.classList.add('active');
         linksdisplay.style.display = "flex"
@@ -26,7 +25,6 @@ thememode.addEventListener('click',()=> {
         document.body.style.background = "white"
         h1.style.color = "black"
         paragraph.style.color = "black"
-
     }
     else{
         darkmode.style.display = "inline"
@@ -35,16 +33,7 @@ thememode.addEventListener('click',()=> {
         h1.style.color = "white"
     }
 })
-// async function copytoclip(passwords){
-//     try{
-//         await navigator.clipboard.writeText(password);
-//             console.log("password is copied!")
-//     }
-//     catch(err){
-//         console.log('failed to copy password',err);
-//         alert('could not copy text automatically')
-//     }
-// }
+
 
 function passwordgenerator(){
     let password = ""
@@ -77,5 +66,6 @@ closetab.addEventListener('click',()=> {
     linksdisplay.style.display = "none"
     menu.style.display = "inline"
 })
+
 
 

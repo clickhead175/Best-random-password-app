@@ -53,7 +53,6 @@ function passwordgenerator(){
     div2.textContent = password2
 }
 
-
 genbtn.addEventListener('click', () => {
     passwordgenerator() 
     copytoclip()
@@ -66,6 +65,7 @@ closetab.addEventListener('click',()=> {
     linksdisplay.style.display = "none"
     menu.style.display = "inline"
 })
+
 
 
 
